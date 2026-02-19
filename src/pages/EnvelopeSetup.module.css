@@ -29,6 +29,17 @@
   align-items: center;
   gap: 8px;
 }
+.contactLink {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+}
+.contactLink:hover {
+  color: white;
+  text-decoration: underline;
+}
 .logoIcon {
   font-size: 24px;
 }

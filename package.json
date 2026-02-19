@@ -1,6 +1,19 @@
 {
   "name": "mockusign",
   "version": "0.0.0",
+  "description": "Visual DocuSign envelope builder that exports API-ready eSignature JSON payloads",
+  "license": "GPL-3.0-only",
+  "author": "Nikki Luzader <nikkiluzader@gmail.com>",
+  "keywords": [
+    "docusign",
+    "esignature",
+    "envelope-builder",
+    "pdf",
+    "rest-api",
+    "json",
+    "react",
+    "typescript"
+  ],
   "private": true,
   "type": "module",
   "scripts": {

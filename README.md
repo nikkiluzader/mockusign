@@ -2,6 +2,8 @@
 
 A DocuSign envelope builder UI that lets you visually construct API payloads for the [DocuSign eSignature REST API](https://developers.docusign.com/docs/esign-rest-api/). Instead of sending envelopes, MockuSign exports the JSON payload so you can inspect, test, or integrate it into your own workflow.
 
+Maintainer contact: nikkiluzader@gmail.com
+
 ## What It Does
 
 1. **Upload PDFs** — Drag-and-drop or browse for PDF documents. Multiple documents are supported and appear as tabs in the editor.
@@ -137,6 +139,19 @@ Fields are assigned tab labels in the format: `{fieldType}-{recipientId}-{increm
 
 Example: `signHere-1-1001`, `text-2-1001`, `checkbox-1-1002`
 
+## SEO
+
+MockuSign includes baseline SEO metadata in `index.html`:
+
+- Optimized page title and meta description
+- Search keywords and robots directives
+- Canonical URL pointing to the GitHub project
+- Open Graph tags for richer link previews
+- Twitter card tags
+- JSON-LD `SoftwareApplication` schema with author/contact details
+
+For production deployment, update canonical and social URLs to your live domain.
+
 ## License
 
-MIT
+GNU GPLv3 (`GPL-3.0-only`). See the `LICENSE` file.

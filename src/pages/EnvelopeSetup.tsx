@@ -86,6 +86,9 @@ export default function EnvelopeSetup() {
             <span className={styles.logoText}>MockuSign</span>
             <button className={styles.helpBtn} onClick={() => setShowHelp(true)} title="About MockuSign">?</button>
           </div>
+          <a className={styles.contactLink} href="mailto:nikkiluzader@gmail.com">
+            Contact: nikkiluzader@gmail.com
+          </a>
         </div>
         <div className={styles.headerCenter}>
           <div className={styles.steps}>
