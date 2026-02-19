@@ -1,0 +1,133 @@
+/* MockuSign - DocuSign-like styling */
+:root {
+  --ds-purple: #4C00FF;
+  --ds-purple-dark: #3700B3;
+  --ds-purple-light: #E8E0FF;
+  --ds-yellow: #F7C948;
+  --ds-bg: #F5F5F5;
+  --ds-white: #FFFFFF;
+  --ds-border: #D4D4D4;
+  --ds-text: #333333;
+  --ds-text-light: #666666;
+  --ds-text-muted: #999999;
+  --ds-danger: #D32F2F;
+  --ds-success: #2E7D32;
+  --ds-header-height: 56px;
+  --ds-sidebar-width: 200px;
+  --ds-properties-width: 300px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--ds-text);
+  background: var(--ds-bg);
+  overflow: hidden;
+  height: 100vh;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+.ds-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.ds-btn-primary {
+  background: var(--ds-purple);
+  color: white;
+}
+.ds-btn-primary:hover { background: var(--ds-purple-dark); }
+
+.ds-btn-secondary {
+  background: white;
+  color: var(--ds-text);
+  border: 1px solid var(--ds-border);
+}
+.ds-btn-secondary:hover { background: #f0f0f0; }
+
+.ds-btn-danger {
+  background: var(--ds-danger);
+  color: white;
+}
+.ds-btn-danger:hover { background: #b71c1c; }
+
+.ds-btn-yellow {
+  background: var(--ds-yellow);
+  color: var(--ds-text);
+  font-weight: 600;
+}
+.ds-btn-yellow:hover { background: #e6b83e; }
+
+.ds-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ds-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--ds-border);
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.ds-input:focus {
+  border-color: var(--ds-purple);
+  box-shadow: 0 0 0 2px var(--ds-purple-light);
+}
+
+.ds-select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--ds-border);
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  background: white;
+  cursor: pointer;
+}
+.ds-select:focus { border-color: var(--ds-purple); }
+
+.ds-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ds-text-light);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #c1c1c1; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #a1a1a1; }

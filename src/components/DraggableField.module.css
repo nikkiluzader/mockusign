@@ -1,0 +1,127 @@
+.field {
+  position: absolute;
+  border: 2px solid;
+  border-radius: 3px;
+  cursor: move;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 6px;
+  font-size: 11px;
+  user-select: none;
+  z-index: 10;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: box-shadow 0.15s;
+}
+.field:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.field.selected {
+  box-shadow: 0 0 0 2px rgba(76, 0, 176, 0.4), 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+  overflow: visible;
+}
+.icon {
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.label {
+  font-weight: 500;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Signature / Initial / Stamp compact block */
+.signBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 0;
+  line-height: 1;
+}
+.signLabel {
+  font-size: 10px;
+  font-weight: 600;
+  color: #444;
+  letter-spacing: 0.3px;
+}
+.signIcon {
+  font-size: 16px;
+  line-height: 1;
+  margin-top: 1px;
+}
+.signLine {
+  width: 70%;
+  border-top: 1.5px solid;
+  margin-top: 2px;
+  margin-top: 1px;
+}
+.dropdownCaret {
+  color: #666;
+  font-size: 10px;
+}
+.toolbar {
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 4px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 30;
+}
+.toolBtn {
+  background: none;
+  border: none;
+  padding: 4px 6px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 13px;
+  transition: background 0.15s;
+}
+.toolBtn:hover {
+  background: #f0f0f0;
+}
+.deleteBtn:hover {
+  background: #fee;
+}
+
+/* Corner resize handles */
+.handle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border: 2px solid;
+  border-radius: 50%;
+  z-index: 25;
+}
+.handleNW {
+  top: -5px;
+  left: -5px;
+  cursor: nw-resize;
+}
+.handleNE {
+  top: -5px;
+  right: -5px;
+  cursor: ne-resize;
+}
+.handleSW {
+  bottom: -5px;
+  left: -5px;
+  cursor: sw-resize;
+}
+.handleSE {
+  bottom: -5px;
+  right: -5px;
+  cursor: se-resize;
+}

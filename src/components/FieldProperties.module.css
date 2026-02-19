@@ -1,0 +1,209 @@
+.panel {
+  height: 100%;
+  overflow-y: auto;
+  background: white;
+}
+.emptyState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #999;
+  font-size: 13px;
+  text-align: center;
+  padding: 24px;
+}
+.fieldHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  background: #f9f9fb;
+}
+.fieldIcon {
+  font-size: 22px;
+}
+.fieldType {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+.fieldId {
+  font-size: 11px;
+  color: #999;
+  font-family: monospace;
+}
+
+/* Sections */
+.sections {
+  padding: 4px 0;
+}
+.section {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 12px 16px;
+}
+.sectionTitle {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #999;
+  margin-bottom: 8px;
+}
+.sectionBody {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Form Items */
+.formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.formLabel {
+  font-size: 11px;
+  font-weight: 500;
+  color: #666;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.scaleControl {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  grid-column: 1 / -1;
+}
+
+.scaleControl input[type="range"] {
+  flex: 1;
+  accent-color: #6c2dc7;
+}
+
+.scaleValue {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4a4a4a;
+  min-width: 40px;
+  text-align: right;
+}
+
+/* Checkboxes */
+.checkboxRow {
+  display: flex;
+  gap: 16px;
+}
+.checkboxCol {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.checkLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+}
+.checkLabel input[type="checkbox"] {
+  accent-color: #4c00b0;
+}
+
+/* List / Radio items */
+.listItemRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.listItemRow .ds-input {
+  flex: 1;
+}
+.radioValueRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.radioValueRow .ds-input {
+  flex: 1;
+}
+.removeItemBtn {
+  background: none;
+  border: none;
+  color: #bbb;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  line-height: 1;
+  transition: color 0.15s, background 0.15s;
+}
+.removeItemBtn:hover {
+  background: #fee;
+  color: #e53e3e;
+}
+
+/* List/Series tabs */
+.listTabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 8px;
+}
+.listTab {
+  flex: 1;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  padding: 6px 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.listTab:hover {
+  color: #555;
+}
+.listTab.listTabActive {
+  color: #4c00b0;
+  border-bottom-color: #4c00b0;
+}
+.listHint {
+  font-size: 12px;
+  color: #888;
+  margin: 0 0 8px 0;
+}
+.addOptionBtn {
+  background: none;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  padding: 6px 0;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin-top: 4px;
+}
+.addOptionBtn:hover {
+  border-color: #4c00b0;
+  color: #4c00b0;
+  background: #faf5ff;
+}
+.defaultOption {
+  margin-top: 4px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}

@@ -1,0 +1,64 @@
+.palette {
+  padding: 16px;
+}
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+.hint {
+  font-size: 13px;
+  color: #999;
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  text-align: center;
+}
+.category {
+  margin-bottom: 16px;
+}
+.catLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+.fieldGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+.fieldItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: grab;
+  transition: all 0.15s;
+  font-size: 12px;
+}
+.fieldItem:hover {
+  border-color: #4c00b0;
+  background: #f8f0ff;
+}
+.fieldItem:active {
+  cursor: grabbing;
+  transform: scale(0.97);
+}
+.fieldIcon {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.fieldLabel {
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

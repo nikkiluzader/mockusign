@@ -1,0 +1,91 @@
+.boundingBox {
+  position: absolute;
+  border: 2px dashed;
+  border-radius: 6px;
+  z-index: 8;
+  pointer-events: auto;
+  cursor: default;
+  transition: border-color 0.15s;
+}
+.boundingBox.selected {
+  z-index: 18;
+}
+
+.cbSquare {
+  position: absolute;
+  border: 2px solid;
+  border-radius: 3px;
+  cursor: move;
+  z-index: 19;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transition: border-color 0.15s, background-color 0.15s, box-shadow 0.15s;
+}
+.cbSquare:hover {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
+}
+.cbSquare.activeCb {
+  border-width: 3px;
+  z-index: 21;
+  box-shadow: 0 0 0 2px rgba(76, 0, 176, 0.35), 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.checkmark {
+  font-weight: 700;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+.addBtn {
+  position: absolute;
+  transform: translateX(-50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid;
+  background: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 22;
+  padding: 0;
+  transition: background 0.15s, transform 0.15s;
+}
+.addBtn:hover {
+  background: #f3eaff;
+  transform: translateX(-50%) scale(1.15);
+}
+
+.toolbar {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 4px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 30;
+}
+.toolBtn {
+  background: none;
+  border: none;
+  padding: 4px 6px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 13px;
+  transition: background 0.15s;
+}
+.toolBtn:hover {
+  background: #fee;
+}
